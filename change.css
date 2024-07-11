@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10;
+    padding: 10;
+}
+
+.character {
+    position: relative;     /* 添加相對定位，以便使用 z-index 控制 */
+    width: 400px;       /* 調整角色圖片的寬度 */
+}
+
+.clothing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;      /* 初始隱藏衣物 */
+}
+
+.character img {
+    height: auto;       /* 自動計算高度，保持原始比例 */
+    max-width: 100%;        /* 讓圖片保持比例，最大寬度100% */
+    display: block;     /* 讓圖片可以單獨占據一行 */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;        /* 垂直方向上對齊 */
+}
+
+.category-button {
+    width: 70px; /* 設置按鈕寬度 */
+    height: 70px; /* 設置按鈕高度 */
+    background-image: url('img/icon/btn.PNG'); /* 替換成你的圖片路徑 */
+    background-size: cover; /* 可以根據需要設置背景圖片的大小調整方式 */
+    cursor: pointer; /* 讓鼠標顯示為手指指示器，表明可以點擊 */
+    /* 可以根據需要添加其他樣式，比如邊框、圓角等 */
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: #b50018;
+    font-weight: bold;
+    margin: 3px; /* 按钮之间的间距 */
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-buttons {
+    margin: 2cap;
+    padding: 5px;
+}
+
+.button-image {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border: 1pt solid #4d5589; /* 添加2px的#000边框 */
+    border-radius: 10px; /* 添加圆角 */
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 10;
+    margin: 0;
+}
+
+
+
+.ear {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+
+.f_hair {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.accessory {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.coat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.cloth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.shoe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.sock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.b_hair {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.tail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}

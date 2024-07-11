@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幫ㄘ內講換衣服</title>
+    <link rel="stylesheet" href="change.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="character">
+
+            <!-- <img src="" alt="" class="" id=""> -->
+
+            <!-- 耳朵 -->
+            <img src="img/ear/ear0.PNG" alt="移除" class="clothing ear" id="ear0">
+            <img src="img/ear/ear.PNG" alt="耳朵" class="clothing ear" id="ear1">
+
+
+
+            <!-- 前髮 -->
+            <img src="img/f_hair/f_hair_01.PNG" alt="正裝" class="clothing f_hair" id="f_hair01">
+            <img src="img/f_hair/f_hair_pajamas.PNG" alt="睡衣" class="clothing f_hair" id="f_hairpajamas">
+            <img src="img/f_hair/f_hair_valen.PNG" alt="情人節" class="clothing f_hair" id="f_hairvalen">
+            <img src="img/f_hair/f_hair_short.PNG" alt="短髮" class="clothing f_hair" id="f_hairshort">
+            <img src="" alt="和洋折衷" class="clothing f_hair" id="f_hairwayo">
+
+            <!-- 飾品 -->
+            <img src="img/accessory/accessory0.PNG" alt="移除" class="clothing accessory" id="accessory0">
+            <img src="img/accessory/earing_01.PNG" alt="正裝" class="clothing accessory" id="earing01">
+
+            <!-- 外套 -->
+            <img src="img/coat/coat0.PNG" alt="移除" class="clothing coat" id="coat0">
+            <img src="img/coat/coat_valen.PNG" alt="情人節" class="clothing coat" id="coatvalen">
+            <img src="" alt="高馬尾" class="clothing coat" id="coathigh">
+
+            <!-- 衣服 -->
+            <img src="img/cloth/cloth0.PNG" alt="移除" class="clothing cloth" id="cloth0">
+            <img src="img/cloth/cloth_01.PNG" alt="正裝" class="clothing cloth" id="cloth01">
+            <img src="img/cloth/cloth_pajamas.PNG" alt="睡衣" class="clothing cloth" id="clothpajamas">
+            <img src="img/cloth/cloth_valen.PNG" alt="情人節" class="clothing cloth" id="clothvalen">
+            <img src="img/cloth/cloth_valenshirt.PNG" alt="情人節" class="clothing cloth" id="clothvalenshirt">
+            <img src="" alt="高馬尾" class="clothing cloth" id="clothhigh1">
+            <img src="" alt="和洋折衷" class="clothing cloth" id="clothwayo">
+
+            <!-- 鞋子 -->
+            <img src="img/shoe/shoe0.PNG" alt="移除" class="clothing shoe" id="shoe0">
+            <img src="img/shoe/shoe_01.PNG" alt="正裝" class="clothing shoe" id="shoe01">
+            <img src="img/shoe/shoe_valen.PNG" alt="情人節" class="clothing shoe" id="shoevalen">
+            <img src="" alt="高馬尾" class="clothing shoe" id="shoehigh">
+
+            <!-- 襪子 -->
+            <img src="img/sock/sock0.PNG" alt="移除" class="clothing sock" id="sock0">
+            <img src="img/sock/sock_01.PNG" alt="正裝" class="clothing sock" id="sock01">
+            <img src="img/sock/sock_valen.PNG" alt="情人節" class="clothing sock" id="sockvalen">
+
+            <!-- base -->
+            <img src="img/base.PNG" alt="身體" class="clothing" id="base">
+
+            <!-- 後髮 -->
+            <img src="img/b_hair/b_hair_01.PNG" alt="正裝" class="clothing b_hair" id="b_hair01">
+            <img src="img/b_hair/b_hair_pajamas.PNG" alt="睡衣" class="clothing b_hair" id="b_hairpajamas">
+            <img src="img/b_hair/b_hair_valen.PNG" alt="情人節" class="clothing b_hair" id="b_hairvalen">
+            <img src="img/b_hair/b_hair_short.PNG" alt="短髮" class="clothing b_hair" id="b_hairshort">
+            <img src="" alt="高馬尾" class="clothing b_hair" id="b_hairhigh">
+            <img src="" alt="和洋折衷" class="clothing b_hair" id="b_hairwayo">
+
+            <!-- 尾巴 -->
+            <img src="img/tail/tail0.PNG" alt="移除" class="clothing tail" id="tail0">
+            <img src="img/tail/tail.PNG" alt="尾巴" class="clothing tail" id="tail1">
+            <img src="img/tail/tailL.PNG" alt="尾巴" class="clothing tail" id="tailL">
+            <img src="img/tail/tailR.PNG" alt="尾巴" class="clothing tail" id="tailR">
+
+
+        </div>
+        <div class="flex-column">
+            <div class="p-3 mt-5 align-items-baseline">
+                <div class="buttons">
+                    <div id="btn-f_hair" class="category-button" onclick="showCategory('f_hair')">前髮</div>
+                    <div id="btn-b_hair" class="category-button" onclick="showCategory('b_hair')">後髮</div>
+                    <div id="btn-coat" class="category-button" onclick="showCategory('coat')">外套</div>
+                    <div id="btn-cloth" class="category-button" onclick="showCategory('cloth')">衣服</div>
+                    <div id="btn-sock" class="category-button" onclick="showCategory('sock')">襪子</div>
+                    <div id="btn-shoe" class="category-button" onclick="showCategory('shoe')">鞋子</div>
+                    <div id="btn-accessory" class="category-button" onclick="showCategory('accessory')">飾品</div>
+                    <div id="btn-ear" class="category-button" onclick="showCategory('ear')">耳朵</div>
+                    <div id="btn-tail" class="category-button" onclick="showCategory('tail')">尾巴</div>
+                </div>
+            </div>
+            <!-- 這裡將動態生成衣物選項按鈕 -->
+            <div id="clothingButtons" class="category-buttons buttons"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+            </script>
+        <script src="change.js"></script>
+
+</body>
+
+</html>
