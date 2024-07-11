@@ -1,0 +1,25 @@
+7耳朵 ear
+6前髮 f_hair
+5飾品 accessory
+4外套 coat
+3衣服 cloth
+2鞋子 shoe
+1襪子 sock
+0 base
+-1 後髮 b_hair
+-2 尾巴 tail
+
+正裝 01
+睡衣 pajamas
+情人節 valen
+短髮 short
+高馬尾 high
+和洋折衷 wayo
+泳衣 swim   
+
+
+加衣服：
+在html裡面加到對應類別
+複製id
+貼上js
+重新命名icon
