@@ -15,7 +15,7 @@ var clothes = {
     f_hair: [, 'f_hair01', 'f_hairpajamas', 'f_hairvalen', 'f_hairshort', 'f_hairwayo'],
     accessory: ['accessory0', 'earing01'],
     coat: ['coat0', 'coatvalen', 'coathigh'],
-    cloth: ['cloth0', 'cloth01', 'clothpajamas', 'clothvalen', 'clothhigh1', 'clothhigh2', 'clothwayo'],
+    cloth: ['cloth0', 'cloth01', 'clothpajamas', 'clothvalen', 'clothhigh1', 'clothhigh2', 'clothwayo','clothdress'],
     shoe: ['shoe0', 'shoe01', 'shoevalen', 'shoehigh'],
     sock: ['sock0', 'sock01', 'sockvalen'],
     b_hair: ['b_hair01', 'b_hairpajamas', 'b_hairvalen', 'b_hairshort', 'b_hairhigh', 'b_hairwayo'],
